@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushi's Birthday Surprise</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            background-color: #ffcccc;
+            border: 2px solid #ff9999;
+            animation: dragBox 5s linear infinite;
+        }
+        @keyframes dragBox {
+            0% { left: 0; }
+            50% { left: 50%; }
+            100% { left: 100%; }
+        }
+        .photos {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.google.co.in/imgres?imgurl=https%3A%2F%2Fc8.alamy.com%2Fcomp%2F2GBCXNX%2Fsmiling-indian-teenage-girl-with-birthday-cake-gift-boxes-and-party-hat-looking-at-camera-celebrating-holiday-2GBCXNX.jpg&tbnid=kNh9nJPdMNFPSM&vet=12ahUKEwjdo_LD-NyEAxXTTGwGHTSrD7wQMygBegQIARBh..i&imgrefurl=https%3A%2F%2Fwww.alamy.com%2Fstock-photo%2Findian-girl-celebrating-birthday.html&docid=zLwwY5eRRwstRM&w=1300&h=948&q=girls%20celebrating%20birthday&ved=2ahUKEwjdo_LD-NyEAxXTTGwGHTSrD7wQMygBegQIARBh');
+            background-size: cover;
+            animation: revealPhotos 5s ease-in-out forwards;
+        }
+        @keyframes revealPhotos {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .party-poppers {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: popPoppers 2s ease-in-out 5s forwards;
+        }
+        @keyframes popPoppers {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+        h1 {
+            font-size: 24px;
+            color: white;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="photos"></div>
+        <div class="party-poppers">
+            <img src="https://www.google.co.in/imgres?imgurl=https%3A%2F%2Fcdn3.vectorstock.com%2Fi%2F1000x1000%2F91%2F07%2Fexploding-birthday-present-vector-729107.jpg&tbnid=90GDoC7MGeBCzM&vet=12ahUKEwiaq7v289yEAxWK9zgGHZvGDWQQMygFegQIARBh..i&imgrefurl=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fexploding-birthday-present-vector-729107&docid=m87m2lS0VQJ9oM&w=740&h=1080&q=birthday%20explode&ved=2ahUKEwiaq7v289yEAxWK9zgGHZvGDWQQMygFegQIARBh" alt="Party Poppers">
+        </div>
+        <h1>Happy Birthday to Ayushi ❤️ Nayak</h1>
+        <p>From Anjul Gupta</p>
+    </div>
+    <!-- Add any additional scripts or animations here -->
+</body>
+</html>
